@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Titles from "../../Components/Shared/Titles";
 import MenuItem from "../../Components/Shared/MenuItem";
 
 
@@ -14,11 +13,8 @@ const PopularMenu = () => {
             })
     }, [])
     return (
-        <section className="mb-12">
-            <Titles
-                heading="From Our Menu"
-                subHeading="Popular Items"
-            ></Titles>
+        <section className="my-12">
+            
             <div className="grid md:grid-cols-2 gap-10">
                 {
                     menu.map(item => <MenuItem
@@ -28,7 +24,7 @@ const PopularMenu = () => {
                 }
             </div>
             <div className="flex justify-center">
-            <button className="btn btn-outline border-0 border-b-4 mt-5 uppercase">View Full Menu</button>
+            <button className="btn btn-outline border-0 border-b-4 mt-5 uppercase">ORDER YOUR FAVOURITE FOOD</button>
 
             </div>
         </section>

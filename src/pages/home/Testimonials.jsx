@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { RiDoubleQuotesL } from "react-icons/ri";
 
 // Import Swiper styles
 import "swiper/css";
@@ -24,6 +25,9 @@ const Testimonials = () => {
                 subHeading="What Our Client Say"
                 heading={"Testimonials"}
             ></Titles>
+            <div className="flex flex-col items-center mx-24 mt-8 ">
+            <RiDoubleQuotesL className="size-20" />
+            </div>
 
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                 {reviews.map((review) => (
